@@ -1346,7 +1346,7 @@ img:hover {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #73141a;
+  background: #fffed2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2860,7 +2860,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 @media (max-width: 767px) {
   body {
