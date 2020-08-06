@@ -1136,6 +1136,32 @@ pre .javascript .function {
   display: inline-block;
 }
 .site-author-image {
+  border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+  max-width: 120px;
+  padding: 2px;
+  border-radius: 50%;
+}
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
+}
+.site-author-name {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+.site-description {
+  color: #999;
+  font-size: 0.8125em;
+  margin-top: 0;
+  text-align: center;
+}
+.site-author-image {
   display: block;
   margin: 0 auto;
   padding: $site-author-image-padding;
@@ -1147,7 +1173,7 @@ pre .javascript .function {
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
   box-shadow: inset 0 -1px 0 #333 sf;
-/* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
+/* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束
     (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
 /* 鼠标经过头像旋转360度 */
   -webkit-transition: -webkit-transform 1s ease-out;
@@ -1155,7 +1181,7 @@ pre .javascript .function {
   transition: transform 1s ease-out;
 }
 img:hover {
-/* 鼠标经过停止头像旋转 
+/* 鼠标经过停止头像旋转
   -webkit-animation-play-state:paused;
   animation-play-state:paused;*/
 /* 鼠标经过头像旋转360度 */
@@ -1225,7 +1251,7 @@ img:hover {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b4ff87;
+  background: #0890a3;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
